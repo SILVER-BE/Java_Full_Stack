@@ -1,6 +1,8 @@
 package com.ohgiraffers.rpg.dto;
 
 import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
 
 public class ClothesShop {
 
@@ -13,6 +15,17 @@ public class ClothesShop {
         clothesList[3] = new Clothes("구찌백", 1000000, -1000);
     }
 
+    public void showItems() {
+        for(int i = 0; i < clothesList.length; i++) {
+            System.out.println("[" + (i+1) + "] " + clothesList[i]
+                    + " / 가격 : " + clothesList[i].getPrice()
+                    + " / 매력도 : " + clothesList[i].getCharm());
+        }
+    }
+
+    public Clothes sellItem(int index) {
+        return clothesList[index];
+    }
 
 
 

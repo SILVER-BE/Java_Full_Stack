@@ -30,9 +30,8 @@ public class PersonDTO {
 
     @Override
     public String toString() {
-        return "PersonDTO{" +
-                "name='" + name + '\'' +
-                ", like=" + like +
-                '}';
+        return "[NPC]" +
+                " 이름 : " + name + " / " +
+                "호감도 : " + like;
     }
 }

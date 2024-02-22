@@ -1,5 +1,8 @@
 package com.ohgiraffers.rpg.dto;
 
+import java.lang.reflect.Array;
+import java.util.List;
+
 public class Item {
 
     private String name;
@@ -40,10 +43,6 @@ public class Item {
 
     @Override
     public String toString() {
-        return "Item{" +
-                "name='" + name + '\'' +
-                ", price=" + price +
-                ", charm=" + charm +
-                '}';
+        return name;
     }
 }
