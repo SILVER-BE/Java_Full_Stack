@@ -19,6 +19,19 @@ public class Application1 {
         UserDTO user1 = new UserDTO("ohgiraffers", "ohgiraffers", "ohgiraffers", new java.util.Date());
         System.out.println(user1.getInformation());
 
+        /* 기본 생성자와 설정자를 이용한 초기화 */
+
+        UserDTO user2 = new UserDTO();
+        user2.setId("ohgiraffers");
+        user2.setPwd("ohgiraffers");
+        user2.setName("ohgiraffers");
+        user2.setEnrollDate(new java.util.Date());  //값 명확하게 구분 가능
+        System.out.println(user2.getInformation());
+
+        /* */
+
+
+
 
 
 

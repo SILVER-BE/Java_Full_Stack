@@ -27,7 +27,6 @@ public class Application2 {
         for(BookDTO book : bookList) {
             System.out.println(book);
         }
-
         /* [ 익명 클래스(Anonymous) ]
         * 익명 클래스는 뒤에 {} 를 만들어 마치 Comparator 인터페이스를 상속받은 클래스인데
         * 이름이 없다고 생각하고 사용하는 것이다.
@@ -76,7 +75,7 @@ public class Application2 {
         System.out.println("책 제목 내림차순 정렬 --------------------");
         for(BookDTO book : bookList) {
             System.out.println(book);
-        }
+        }b
 
 
     }

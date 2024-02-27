@@ -30,7 +30,7 @@ public class UserDTO {
         this.pwd = pwd;
         this.name = name;
         this.enrollDate = enrollDate;
-    }
+    }   // ---> 한꺼번에 설정
 
     /* 설정자(setter) */
     public void setId(String id) {
@@ -42,9 +42,9 @@ public class UserDTO {
     public void setName(String name) {
         this.name = name;
     }
-    public void SetEnrolldate(java.util.Date enrollDate) {
+    public void setEnrollDate(java.util.Date enrollDate) {
         this.enrollDate = enrollDate;
-    }
+    }   // ---> 매개변수 존재, 하나씩 설정
 
     /* 접근자(getter) */
 

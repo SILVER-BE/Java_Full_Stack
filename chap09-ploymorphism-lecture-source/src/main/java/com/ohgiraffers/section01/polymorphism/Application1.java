@@ -60,11 +60,12 @@ public class Application1 {
         * */
 
         System.out.println("동적바인딩 확인-------------------");
-        a1.cry(); //처음에 ctl해서 눌러보면 Animal로 연결된 것 확인 가능
-        a2.cry(); //실행하면 Cat, Tiger로 연결 됨
+        // 처음에 ctl해서 눌러보면 Animal로 연결된 것 확인되지만 실행하면 Cat, Tiger로 연결 됨
+        a1.cry();  //animal -> cat
+        a2.cry();  //animal -> tiger
 
         /* 현재 레퍼런스 변수 타입은 Animal이기 때문에
-        * Cat과 Tiger가 가지고 있는 고유한 기능을 동작시키지 못한다.*/
+        * Cat과 Tiger가 가지고 있는 "고유한 기능"은 동작시키지 못한다.*/
 //        a1.jump(); <-- Cat만 가지고 있는 고유한 기능은 실행시키지 X
 //        a2.bite(); <-- Tiger만 가지고 있는 고유한 기능은 실행시키지 X
 

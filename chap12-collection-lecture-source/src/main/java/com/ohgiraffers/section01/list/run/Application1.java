@@ -89,17 +89,17 @@ public class Application1 {
         Collections.sort(stringList); //정렬 후 유지
         System.out.println("stringListSort : " + stringList);
 
-        stringList = new LinkedList<>(stringList);
-
         /* [ Iterator ]
         * Collection 인터페이스의 iterator() 메소드를 이용해서 인스턴스를 생성할 수 있다.
         * 반복자 라고 불리우며, 반복문을 이용해서 목록을 하나씩 꺼내는 방식으로 사용하기 위함이다.
         * 인덱스로 관리되는 컬렉션이 아닌 경우에는 반복문을 사용해서 요소에 하나씩 접근할 수 없기 때문에
         * 인덱스를 사용하지 않고도 반복문을 사용하기 위한 목록을 만들어주는 역할이라고 보면 된다.
         * hasNext() : 다음 요소를 가지고 있는 경우 true, 더 이상 요소가 없는 경우 false를 반환
-        * next() : 다음 요소를 반환
+        * next() : 다음 요소를 반환 (처음 가리키고 있던 값([0])을 출력하고 다음 값을 준비)
         *
         * */
+
+        stringList = new LinkedList<>(stringList);
 
         Iterator<String> dIter = ((LinkedList<String>)stringList).descendingIterator();
         //형변환 후 디센딩
