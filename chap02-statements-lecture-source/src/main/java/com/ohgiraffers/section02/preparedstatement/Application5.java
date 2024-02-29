@@ -35,7 +35,7 @@ public class Application5 {
 
         try {
             prop.loadFromXML(
-                    new FileInputStream("src/main/java/com/ohgiraffers/section2/preparedstatement/employee-query.xml"));
+                    new FileInputStream("src/main/java/com/ohgiraffers/section02/preparedstatement/employee.query.xml"));
 
             String query =prop.getProperty("selectEmpByFamilyName");
 
@@ -62,8 +62,8 @@ public class Application5 {
                 row.setPhone(rset.getString("PHONE"));
                 row.setDeptCode(rset.getString("DEPT_CODE"));
                 row.setJobCode(rset.getString("JOB_CODE"));
-                row.setSalLevel(rset.getString("SAL_LEVEL"));
                 row.setSalary(rset.getInt("SALARY"));
+                row.setSalLevel(rset.getString("SAL_LEVEL"));
                 row.setBonus(rset.getDouble("BONUS"));
                 row.setManagerId(rset.getString("MANAGER_ID"));
                 row.setHireDate(rset.getDate("HIRE_DATE"));
