@@ -34,7 +34,7 @@ public class Application {
 
         Configuration configuration = new Configuration(environment);
 
-        /* 설정 객체에 매퍼 등록 ( 어디에 쿼리를 작성했다를 등록 매퍼에 대한 메타정보 전달) */
+        /* 설정 객체에 매퍼 등록 (어디에 쿼리를 작성했다를 등록 매퍼에 대한 메타정보 전달) */
         configuration.addMapper(Mapper.class);
 
         /* SqlSessionFactory : SqlSession 객체를 생성하기 위한 팩토리 영할의 인터페이스
