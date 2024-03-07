@@ -4,7 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="500f6b44-93d7-4d16-bd83-e46fb36d927d" name="Changes" comment="" />
+    <list default="true" id="500f6b44-93d7-4d16-bd83-e46fb36d927d" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../chap05-mapper-elements-lecture-source/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../chap05-mapper-elements-lecture-source/src/main/java/com/ohgiraffers/section01/xmlmapper/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/../chap05-mapper-elements-lecture-source/src/main/java/com/ohgiraffers/section01/xmlmapper/Application.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../chap05-mapper-elements-lecture-source/src/main/java/com/ohgiraffers/section01/xmlmapper/ElementTestMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/../chap05-mapper-elements-lecture-source/src/main/java/com/ohgiraffers/section01/xmlmapper/ElementTestMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../chap05-mapper-elements-lecture-source/src/main/java/com/ohgiraffers/section01/xmlmapper/ElementTestService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../chap05-mapper-elements-lecture-source/src/main/java/com/ohgiraffers/section01/xmlmapper/ElementTestService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../chap05-mapper-elements-lecture-source/src/main/resources/com/ohgiraffers/section01/xmlmapper/ElementTestMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../chap05-mapper-elements-lecture-source/src/main/resources/com/ohgiraffers/section01/xmlmapper/ElementTestMapper.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -22,6 +29,9 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 4
 }</component>
@@ -29,22 +39,23 @@
   <component name="ProjectViewState">
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Gradle.chap02-scope-lifecycle-lecture-source [:Application.main()].executor": "Run",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/dev/lecture_code/MyBatis/chap02-scope-lifecycle-lecture-source",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "onboarding.tips.debug.path": "C:/dev/lecture_code/MyBatis/chap02-scope-lifecycle-lecture-source/src/main/java/org/example/Main.java",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Gradle.chap02-scope-lifecycle-lecture-source [:Application.main()].executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/dev/lecture_code/MyBatis/chap02-scope-lifecycle-lecture-source&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;onboarding.tips.debug.path&quot;: &quot;C:/dev/lecture_code/MyBatis/chap02-scope-lifecycle-lecture-source/src/main/java/org/example/Main.java&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -62,6 +73,8 @@
       <updated>1709522226968</updated>
       <workItem from="1709522227984" duration="2526000" />
       <workItem from="1709525222734" duration="4000" />
+      <workItem from="1709788353715" duration="605000" />
+      <workItem from="1709790547094" duration="599000" />
     </task>
     <servers />
   </component>
