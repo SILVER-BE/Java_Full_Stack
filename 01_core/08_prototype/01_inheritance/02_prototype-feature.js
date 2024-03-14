@@ -3,7 +3,7 @@
 const user = {
     id : 'user',
     login : function() {
-        console.log(`${this.id}님이 로그인 했습니다.`)
+        console.log(`${this.id}님이 로그인 되었습니다.`);
     }
 };
 
@@ -13,11 +13,10 @@ const student = {
     __proto__ : user
 };
 
-
 // login 메소드 내의 this는 프로토타입에 영향을 받지 않으며
-// 메소드를 객체에서 호출하든 프로토타입에서 호출하든 상관없이 
+// 메소드를 객체에서 호출하든 프로토타입에서 호출을 하든 상관없이
 // this는 언제나 .앞에 있는 객체이다.
-student.id = 'user001'; // id 추가를 직접 해줬다 !
+student.id = 'user001';
 student.login();
 // user.login();
 
