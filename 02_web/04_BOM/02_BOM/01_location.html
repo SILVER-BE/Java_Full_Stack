@@ -29,6 +29,16 @@
     <button id="btn6">서버로부터 현재 페이지 리로드하기</button>
     <button id="btn7">서버로부터 현재 페이지 리로드하기</button>
 
+    <script>
+        document.getElementById('btn1').onclick = () => location.assign("https://www.google.com");
+        document.getElementById('btn2').onclick = () => location = "https://www.google.com";
+        document.getElementById('btn3').onclick = () => location.href = "https://www.google.com";
+        document.getElementById('btn4').onclick = () => location.replace("https://www.google.com")
+        document.getElementById('btn5').onclick = () => location.rerloda();
+        document.getElementById('btn6').onclick = () => location = location;
+        document.getElementById('btn7').onclick = () => location.href = location.href;
+    </script>
+
     
     
 </body>

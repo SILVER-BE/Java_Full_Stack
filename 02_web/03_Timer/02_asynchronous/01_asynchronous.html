@@ -21,7 +21,26 @@
     단점 : 앞선 태스크가 종료할 때까지 이후 태스크들이 블로킹 
     </pre>
 
-    
+    <script>
+        function sleep(func, delay) {
+            const delayUntil = Date.now() + delay;
+        
+            while(Date.now() < delayUntil);
+
+            func();
+        };
+
+        function delay() {
+            console.log('실행 시간을 늦추고 시펑요')
+        };
+        function start() {
+            console.log('바로 실행하고 시프어요')
+        }
+
+        // sleep(delay, 3000);
+        // start();
+
+    </script>
 
     <h3>비동기 처리(asynchronous)</h3>
     <pre>
@@ -32,7 +51,13 @@
     setTimeout, setInterval, 이벤트 핸들러, HTTP 요청 등은 비동기 처리 방식으로 동작한다.
     </pre>
 
-   
+    <script>
+        // 타이머 함수 setTimeout은 일정 시간이 경과한 이후에 콜백함수 delay를 호출한다.
+        // 타이머 함수 setTimeout은 start 함수를 블로킹 하지 않는다.
+        setTimeout(delay, 3000);
+        start();
+        // 순서에 상관 없이 바로 실행하고 싶어요가 출력
+    </script>
 
     <h3>태스크 큐(task queue)</h3>
 

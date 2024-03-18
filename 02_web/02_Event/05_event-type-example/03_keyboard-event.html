@@ -30,6 +30,19 @@
         대문자 A를 입력하면 event.key=A event.code=KeyA
     </pre>
     <div class="area"></div>
+
+    <script>
+        const $message = document.querySelector("input[type=text]");
+        const $area = document.querySelector(".area");
+
+        $message.onkeydown = (e) => {
+            $area.insertAdjacentHTML('beforeend', "keydown key=" + e.key + ", code=" + e.code + "<br>");
+        }
+
+        $message.onkeyup = (e) => {
+            $area.insertAdjacentHTML('beforeend', "keyup key=" + e.key + ", code=" + e.code + "<br>");
+        }
+    </script>
    
 </body>
 </html>

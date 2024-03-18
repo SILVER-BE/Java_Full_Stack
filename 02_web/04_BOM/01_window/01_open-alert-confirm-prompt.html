@@ -35,6 +35,11 @@
 
     <button id="btn1">새로운 창 열기</button>
     <button id="btn2">새로운 창 열기</button>
+    
+    <script>
+        document.getElementById('btn1').onclick = () => window.open('https://www.google.com', 'popup1', 'width=1080', 'height=800');
+        document.getElementById('btn2').onclick = () => window.open('https://www.naver.com', 'popup1', 'width=1080', 'height=800');
+    </script>
 
    
     <h3>alert</h3>
@@ -42,14 +47,26 @@
     window.alert(message) 메서드는 확인 버튼을 가지며 메시지를 지정할 수 있는 경고 대화 상자를 띄운다.   
     </pre> 
 
-    
+    <script>
+        window.alert('alert창 입니다!!')
+    </script>
+
 
     <h3>confirm</h3>
     <pre>
     window.confirm(message) 메서드는 확인과 취소 두 버튼을 가지며 메시지를 지정할 수 있는 모달 대화 상자를 띄운다. 
     반환 값은 확인을 누를 시 true, 취소를 누르거나 ESC 키를 누르면 false이다.
     </pre>
-    
+
+    <script>
+        const answer = window.confirm('계속 하시겠습니까??');
+
+        if(answer) {
+            console.log('잘 선택하셨습니다 ~~ 가보자고')
+        } else {
+            console.log('아쉽네요 . . . 다음에 또 만나효')
+        }
+    </script>
     
 
     <h3>prompt</h3>
@@ -58,6 +75,16 @@
     default : 텍스트 입력 필드에 기본으로 채워 넣을 문자열이다. 
     반환 값은 확인을 누를 시 사용자가 입력한 문자열이며 취소를 누르거나 ESC 키를 누르면 null이다. 
     </pre>
+
+    <script>
+        const likeNumber = window.prompt('좋아하는 숫자를 입력하세요~', 3);
+
+        if(likeNumber) {
+            console.log(`당신이 좋아하는 숫자는 ${likeNumber}이군요`);
+        } else {
+            console.log('왜 입력 안하셨죠????');
+        }
+    </script>
 
    
 

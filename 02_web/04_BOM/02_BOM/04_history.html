@@ -19,6 +19,18 @@
     <input type="number" name="page">
     <button id="btn3">입력한 만큼 이동하기</button>
 
+    <script>
+        for(prop in history) {
+            console.log(`${prop} : ${history[prop]}`);
+        }
+        document.getElementById('btn1').onclick = () => history.back()
+        document.getElementById('btn2').onclick = () => history.forward()
+        document.getElementById('btn3').onclick = () => function() {
+            let page = document.querySelector('input[name=page]').value;
+            history.go(page);
+        }
+    </script>
+
    
 </body>
 </html>

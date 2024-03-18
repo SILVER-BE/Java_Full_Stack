@@ -27,6 +27,18 @@
         행운이 필요한 사람에게 보내 주셔야 합니다. 복사는 안됩니다.
     </div>
 
+    <script>
+        const $span = document.querySelector('span');
+        $span.onmousedown = (e) => e.preventDefault();
+        $span.onmousemove = (e) => e.preventDefault();
+
+        const $div = document.querySelector('div');
+        $div.oncopy = () => { 
+            alert('복사 불가능입니다!!');
+            return false;
+        }
+    </script>
+
    
 
 </body>

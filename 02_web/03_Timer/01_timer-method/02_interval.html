@@ -26,5 +26,16 @@
     반환한 id를 clearInterval 함수의 인수로 전달하여 타이머를 취소할 수 있다. 
     </pre>
 
+    <script>
+        let count = 1;
+        const timerId = setInterval(() => {
+            console.log(count);
+            if(count++ === 5) clearInterval(timerId);
+        }, 500);
+    </script>
+
+    
+
+
 </body>
 </html>
