@@ -1,0 +1,22 @@
+package com.ohgiraffers.section03.abstraction;
+
+public class CarDriver {
+
+    private Car car = new Car();
+
+    public void startup() {
+        car.startUp();
+    }
+
+    public void stepAccelator () {
+        car.go();
+    }
+
+    public void stepBreak() {
+        car.stop();
+    }
+
+    public void turnOff() {
+        car.turnOff();
+    }
+}
