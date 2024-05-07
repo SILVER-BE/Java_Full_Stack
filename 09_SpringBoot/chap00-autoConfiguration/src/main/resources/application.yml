@@ -1,0 +1,7 @@
+#야물파일~!
+
+test:
+  greeting: hi! #value값과 key값 사이 띄어쓰기를 항상 해야함 (한 칸!)
+  array: 안녕, 반가워!
+  value: hell world... #우선순위: propertise > yml 그럼에도 요새는 yml파일을 쓴다고 합니다
+username: 판다
