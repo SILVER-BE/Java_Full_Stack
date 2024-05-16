@@ -6,6 +6,7 @@ import com.ohgiraffers.springdatajpa.menu.entity.Category;
 import com.ohgiraffers.springdatajpa.menu.entity.Menu;
 import com.ohgiraffers.springdatajpa.menu.repository.CategoryRepository;
 import com.ohgiraffers.springdatajpa.menu.repository.MenuRepository;
+import jakarta.transaction.Transactional;
 import lombok.RequiredArgsConstructor;
 import org.modelmapper.ModelMapper;
 import org.springframework.data.domain.Page;
@@ -75,5 +76,31 @@ public class MenuService {
         return categoryList.stream()
                 .map(category -> modelMapper.map(category, CategoryDTO.class))
                 .toList();
+    }
+
+    /* 6. save */
+    @Transactional
+    public void registMenu(MenuDTO menuDTO) {
+
+        //DTO 를 Entity 타입으로 바꿔주기
+        menuRepository.save(modelMapper.map(menuDTO, Menu.class));
+    }
+
+    /* 7. modify ( 엔티티 객체 필드 값 변경 ) */
+    @Transactional
+    public void modifyMenu(MenuDTO menuDTO) {
+
+        Menu foundMenu = menuRepository.findById(menuDTO.getMenuCode()).orElseThrow(IllegalArgumentException::new);
+
+        foundMenu.modifyMenuName(menuDTO.getMenuName());
+
+        //변경이 감지되어 업데이트가 자체적으로 진행
+    }
+
+    /* 8. deleteById */
+    @Transactional
+    public void deleteMenu(Integer menuCode) {
+
+        menuRepository.deleteById(menuCode);
     }
 }

@@ -24,5 +24,8 @@ public class Menu {
     private int categoryCode;
     private String orderableStatus;
 
-
+    /* 메뉴이름을 변경해주는 메소드 */
+    public void modifyMenuName(String menuName) {
+        this.menuName = menuName;
+    }
 }
