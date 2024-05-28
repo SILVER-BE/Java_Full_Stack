@@ -102,7 +102,7 @@
         function Content() {
 
             const [names, setNames] = useState([
-                { id: 1, name: '할일 목록을 추가할 것', completed: false }
+                { d: 1, name: '할일 목록을 추가할 것', completed: false }
             ]);
 
             const [inputText, setInputText] = useState('');
@@ -131,9 +131,9 @@
             }
 
             const todoItems = names.map(name => (
-                <li key={name.id} style={{ listStyleType: 'none' }}>
+                <li key={name.id} style={{listStyleType: 'none'}}>
                     <input type="checkbox" checked={name.completed} onChange={() => toggleCompletion(name.id)}/>
-                    <span style={{ textDecoration: name.completed ? 'line-through' : 'none' }}>{name.name}</span>&nbsp;
+                    <span style={{textDecoration: name.completed ? 'line-through' : 'none'}}>{name.name}</span>&nbsp;
                     <button onClick={() => onRemove(name.id)}><b>X</b></button>
                 </li>
             ));
@@ -142,7 +142,7 @@
                 <>    
                     <div class='content'>
                         <h3><b>ToDo-List</b></h3>
-                        <table style={{ border: '2px solid', width: '500px' }}>
+                        <table style={{border: '2px solid', width: '500px'}}>
                             <tbody>
                                 <tr>
                                     <td>
@@ -163,14 +163,14 @@
 
         function TodoList() {
             return (
-                <div style={{ margin: 'auto' }}>
-                    <Header />
-                    <Content />
+                <div style={{margin: 'auto'}}>
+                    <Header/>
+                    <Content/>
                 </div>
             );
         }
 
-        ReactDOM.createRoot(document.getElementById('root')).render(<TodoList />);
+        ReactDOM.createRoot(document.getElementById('root')).render(<TodoList/>);
     </script>
 
 </body>
