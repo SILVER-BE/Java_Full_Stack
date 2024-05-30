@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /* Promis는 콜백 지옥 같은 코드가 형성 되지 않게 하는 방안으로 ES6에서 도입되었다. */
+        function increase(number) {
+            
+            //resolve: 성공, reject: 실패
+            const promise = new Promise((resolve, reject) => {
+                setTimeout(
+                    () => {
+                        const result = number + 10;
+
+                        if(result > 50) {
+                            const e = new Error('NumberTooBig');
+
+                            return reject(e);
+                        }
+
+                        resolve(result);
+                    },
+                    1000
+                );
+            });
+
+            return promise;
+        }
+
+        console.log(increase(0));
+
+        //then 값을 만나면 저장했던 값을 지닌 Promise 객체를 반환한다.
+        increase(0)
+            .then(number => {
+                console.log(number);
+
+                return increase(number);
+            })
+            .then(number => {
+                console.log(number);
+
+                return increase(number);
+            })
+            .then(number => {
+                console.log(number);
+
+                return increase(number);
+            })
+            .then(number => {
+                console.log(number);
+
+                return increase(number);
+            })
+            .then(number => {
+                console.log(number);
+
+                return increase(number);
+            })
+            .catch(e => {
+                console.log(e);
+            })
+    </script>
+</body>
+</html>

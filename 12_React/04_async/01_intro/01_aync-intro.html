@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        function sayHello() {
+            console.log('Hello World!')
+        }
+
+        sayHello();
+        console.log('end');
+        // 동기
+
+        setTimeout(sayHello, 3000); //3초 뒤에 동작
+        console.log('end');         //18번의 동작이 끝나지 않은 상태에서 실행
+        // 동시에 실행되는 것처럼 보이는 작업을 비동기라고 함
+
+    </script>
+</body>
+</html>
