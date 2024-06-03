@@ -1,0 +1,12 @@
+.MenuItem{
+    width: 300px;
+    background-color: skyblue;
+    cursor: pointer;
+    color: black;
+}
+
+.MenuItem:hover {
+    background-image: url('C:\dev\lecture_code\Java_Full_Stack\12_React\05-1_router\02_params\public\images\hamster.png');
+    background-size: 300px;
+    color: white;
+}
