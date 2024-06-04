@@ -10,3 +10,7 @@ export function getMenuDetail(menuCode) {
     return menus.find(menu => menu.menuCode == menuCode);
 }
 
+/* 메뉴명을 전달받아 메뉴이름을 포함하고있는 메뉴 목록 조회 */
+export function getSearchMenu(menuName) {
+    return menus.filter(menu => menu.menuName.match(menuName));
+}
