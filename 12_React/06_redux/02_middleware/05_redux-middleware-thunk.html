@@ -38,24 +38,24 @@
             /* dispatch 시 함수가 전달되면, 
                 전달 된 콜백함수를 호출하며 dispatch와 getState를 전달한다. */
 
-            //함수를 호출한다!
-            if(typeof action === 'function') {
+            // 함수 호출 => 함수면 디스패치를 한 번 더 호출함
+            if (typeof action === 'function') {
                 return action(dispatch, getState);
             }
+
             //아니라면 action만
             return next(action);
         }
 
         /* 콜백으로 사용할 비동기 함수 (API 호출 로직) */
         const fetchUser = async (dispatch, getState) => {
-            console.log('action :', action);
             
             /* api 호출 */
             const userData = await fetch('https://jsonplaceholder.typicode.com/users')
                                     .then(res => res.json());
             console.log('userData :', userData);
 
-            next({ ...action, payload : userData }); //기존에 있던 action + payload 추가
+            dispatch({ type : FETCH_DATA, payload : userData }); //기존에 있던 action + payload 추가
         }
 
         /* Reducer : 추가한 payload만 사용해보기 */
